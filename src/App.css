@@ -14,6 +14,7 @@
   --color-ededed: #ededed;
   --color-777777: #777777;
   --color-1c1c1b: #1c1c1b;
+  --color-fc353c: #fc353c;
 }
 
 .section-heading {
@@ -330,4 +331,11 @@ footer .input-group-text {
 .wishlist-icon {
   top: 2%;
   right: 15px;
+}
+
+/*special product*/
+.special-product-card {
+  padding: 20px 10px;
+  border-radius: 10px;
+  background-color: white;
 }
