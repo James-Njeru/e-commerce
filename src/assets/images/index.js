@@ -47,6 +47,7 @@ import Tv from "./tv.jpg";
 import User from "./user.svg";
 import View from "./view.svg";
 import Watch from "./watch.jpg";
+import Watch2 from "./watch2.png";
 import Wishblack from "./wish-black.svg";
 import Wish from "./wish.svg";
 import Wishlist from "./wishlist.svg";
@@ -101,6 +102,7 @@ export {
   User,
   View,
   Watch,
+  Watch2,
   Wish,
   Wishblack,
   Wishlist,
