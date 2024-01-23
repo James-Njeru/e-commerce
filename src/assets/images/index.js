@@ -51,6 +51,10 @@ import Watch2 from "./watch2.png";
 import Wishblack from "./wish-black.svg";
 import Wish from "./wish.svg";
 import Wishlist from "./wishlist.svg";
+import Famous1 from "./famous1.png";
+import Famous2 from "./famous2.png";
+import Famous3 from "./famous3.png";
+import Famous4 from "./famous4.png";
 
 export {
   Acc,
@@ -106,4 +110,8 @@ export {
   Wish,
   Wishblack,
   Wishlist,
+  Famous1,
+  Famous2,
+  Famous3,
+  Famous4,
 };

@@ -339,3 +339,43 @@ footer .input-group-text {
   border-radius: 10px;
   background-color: white;
 }
+
+/*famous card*/
+.famous-card {
+  border-radius: 10px;
+  padding: 15px;
+}
+
+.famous-card img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+/*.famous-card .famous-content {
+  top: 10%;
+  left: 10%;
+}*/
+
+.famous-content h5 {
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: 400;
+  margin-bottom: 7px;
+  color: white;
+  text-transform: uppercase;
+}
+
+.famous-content h6 {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 500;
+  color: white;
+}
+
+.famous-content p {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 100;
+  color: white;
+}
