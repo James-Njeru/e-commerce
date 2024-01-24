@@ -277,7 +277,7 @@ function Home() {
                   <h5 className="text-dark">Smartphones</h5>
                   <h6 className="text-dark">Smartphone 13 Pro.</h6>
                   <p className="text-dark">
-                    Now in Green. From %999.00 or $14.62/mo. for 24 mo. Footnote
+                    From %999.00 or $14.62/mo. for 24 mo.
                   </p>
                 </div>
                 <img src={Famous3} className="img-fluid" alt="famous" />
