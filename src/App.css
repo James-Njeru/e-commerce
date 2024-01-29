@@ -15,6 +15,7 @@
   --color-777777: #777777;
   --color-1c1c1b: #1c1c1b;
   --color-fc353c: #fc353c;
+  --color-f2f2f2: #f2f2f2;
 }
 
 .section-heading {
@@ -281,6 +282,7 @@ footer .input-group-text {
   background-color: white;
   border-radius: 10px;
   overflow: hidden;
+  width: 100%;
 }
 
 .product-card .product-image {
@@ -440,4 +442,39 @@ footer .input-group-text {
 }
 
 .filter-sort-grid {
+  padding: 10px;
+  border-radius: 10px;
+  background-color: white;
+}
+
+.grid img {
+  width: 22px;
+  height: 22px;
+  background-color: var(--color-f2f2f2);
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.gr-12 {
+  width: 100%;
+}
+
+.gr-6 {
+  width: 40%;
+}
+
+.gr-4 {
+  width: 32%;
+}
+
+.gr-3 {
+  width: 24%;
+}
+
+.gr-12 .product-card {
+  display: flex;
+  gap: 20px;
+}
+
+.gr-12 .product-card .product-image {
 }

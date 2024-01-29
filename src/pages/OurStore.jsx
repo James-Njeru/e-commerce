@@ -1,9 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import ReactStars from "react-rating-stars-component";
 import BreadCrumb from "../components/BreadCrumb";
-import { Watch } from "../assets/images";
+import ProductCard from "../components/ProductCard";
+import { Gr, Gr2, Gr3, Gr4, Watch } from "../assets/images";
 
 function OurStore() {
+  const [grid, setGrid] = useState(4);
+
   return (
     <>
       <BreadCrumb title="Our Store" />
@@ -50,7 +53,7 @@ function OurStore() {
                   </div>
                   <h5 className="sub-title">Price</h5>
                   <div className="d-flex align-items-center gap-10">
-                    <div class="form-floating">
+                    <div className="form-floating">
                       <input
                         type="email"
                         className="form-control"
@@ -59,7 +62,7 @@ function OurStore() {
                       />
                       <label htmlFor="floatingInput">From</label>
                     </div>
-                    <div class="form-floating">
+                    <div className="form-floating">
                       <input
                         type="email"
                         className="form-control"
@@ -169,23 +172,77 @@ function OurStore() {
               </div>
             </div>
             <div className="col-9">
-              <div className="filter-sort-grid">
-                <div className="d-flex align-items-center gap-10">
-                  <p className="mb-0">Sort By:</p>
-                  <select name="" className="form-control form-select" id="">
-                    <option value="manual">Featured</option>
-                    <option value="best-selling" selected>
-                      Best selling
-                    </option>
-                    <option value="title-ascending">Alphabetically, A-Z</option>
-                    <option value="title-descending">
-                      Alphabetically, Z-A
-                    </option>
-                    <option value="price-ascending">Price, low to high</option>
-                    <option value="price-descending">Price, high to low</option>
-                    <option value="created-ascending">Date, old to new</option>
-                    <option value="created-ascending">Date, old to new</option>
-                  </select>
+              <div className="filter-sort-grid mb-4">
+                <div className="d-flex justify-content-between align-items-center">
+                  <div className="d-flex align-items-center gap-10">
+                    <p className="mb-0" style={{ width: "100px" }}>
+                      Sort By:
+                    </p>
+                    <select name="" className="form-control form-select" id="">
+                      <option value="manual">Featured</option>
+                      <option value="best-selling">Best selling</option>
+                      <option value="title-ascending">
+                        Alphabetically, A-Z
+                      </option>
+                      <option value="title-descending">
+                        Alphabetically, Z-A
+                      </option>
+                      <option value="price-ascending">
+                        Price, low to high
+                      </option>
+                      <option value="price-descending">
+                        Price, high to low
+                      </option>
+                      <option value="created-ascending">
+                        Date, old to new
+                      </option>
+                      <option value="created-ascending">
+                        Date, old to new
+                      </option>
+                    </select>
+                  </div>
+                  <div className="d-flex align-items-center gap-10">
+                    <p className="totalproducts mb-0">21 Products</p>
+                    <div className="d-flex gap-10 align-items-center grid">
+                      <img
+                        onClick={() => {
+                          setGrid(3);
+                        }}
+                        src={Gr4}
+                        alt="grid"
+                        className="d-block img-fluid"
+                      />
+                      <img
+                        onClick={() => {
+                          setGrid(4);
+                        }}
+                        src={Gr3}
+                        alt="grid"
+                        className="d-block img-fluid"
+                      />
+                      <img
+                        onClick={() => {
+                          setGrid(6);
+                        }}
+                        src={Gr2}
+                        alt="grid"
+                        className="d-block img-fluid"
+                      />
+                      <img
+                        onClick={() => {
+                          setGrid(12);
+                        }}
+                        src={Gr}
+                        alt="grid"
+                        className="d-block img-fluid"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="products-list pb-5">
+                <div className="d-flex gap-10">
+                  <ProductCard className="ourstore-productcard" grid={grid} />
                 </div>
               </div>
             </div>
