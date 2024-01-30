@@ -7,6 +7,7 @@ import About from "./pages/About.jsx";
 import Contact from "./pages/Contact.jsx";
 import OurStore from "./pages/OurStore.jsx";
 import Blog from "./pages/Blog.jsx";
+import CompareProduct from "./pages/CompareProduct.jsx";
 
 const router = createBrowserRouter([
   {
@@ -33,6 +34,10 @@ const router = createBrowserRouter([
       {
         path: "/blog",
         element: <Blog />,
+      },
+      {
+        path: "/compare-product",
+        element: <CompareProduct />,
       },
     ],
   },
