@@ -89,7 +89,7 @@ function Footer() {
                   <Link className="text-white py-2 mb-1" to="#">
                     Terms & Conditions
                   </Link>
-                  <Link className="text-white py-2 mb-1" to="#">
+                  <Link className="text-white py-2 mb-1" to="/blog">
                     Blogs
                   </Link>
                 </div>
