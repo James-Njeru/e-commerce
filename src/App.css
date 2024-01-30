@@ -324,6 +324,12 @@ footer .input-group-text {
   color: var(--color-1c1c1b);
 }
 
+.product-card p.description {
+  font-size: 13px;
+  color: var(--color-777777);
+  margin-right: 20px;
+}
+
 .action-bar {
   top: 10%;
   right: -23px;
@@ -453,6 +459,7 @@ footer .input-group-text {
   background-color: var(--color-f2f2f2);
   padding: 5px;
   border-radius: 5px;
+  cursor: pointer;
 }
 
 .gr-12 {
@@ -476,5 +483,18 @@ footer .input-group-text {
   gap: 20px;
 }
 
+.gr-6 .product-image {
+  width: 100%;
+}
+
+.gr-6 .product-image img {
+  margin: auto;
+  display: block;
+}
+
 .gr-12 .product-card .product-image {
+}
+
+.gr-12 .action-bar {
+  top: 14%;
 }

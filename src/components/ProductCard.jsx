@@ -41,6 +41,10 @@ function ProductCard(props) {
               edit={false}
               activeColor="#ffd700"
             />
+            <p className={`description ${grid === 12 ? "d-block" : "d-none"}`}>
+              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+              accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+            </p>
             <p className="price">$100.00</p>
           </div>
           <div className="action-bar position-absolute">
@@ -85,6 +89,10 @@ function ProductCard(props) {
               edit={false}
               activeColor="#ffd700"
             />
+            <p className={`description ${grid === 12 ? "d-block" : "d-none"}`}>
+              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+              accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+            </p>
             <p className="price">$100.00</p>
           </div>
           <div className="action-bar position-absolute">
