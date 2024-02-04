@@ -8,6 +8,8 @@ import Contact from "./pages/Contact.jsx";
 import OurStore from "./pages/OurStore.jsx";
 import Blog from "./pages/Blog.jsx";
 import CompareProduct from "./pages/CompareProduct.jsx";
+import Wishlist from "./pages/Wishlist.jsx";
+import Login from "./pages/Login.jsx";
 
 const router = createBrowserRouter([
   {
@@ -38,6 +40,14 @@ const router = createBrowserRouter([
       {
         path: "/compare-product",
         element: <CompareProduct />,
+      },
+      {
+        path: "/wishlist",
+        element: <Wishlist />,
+      },
+      {
+        path: "/login",
+        element: <Login />,
       },
     ],
   },
