@@ -10,6 +10,10 @@ import Blog from "./pages/Blog.jsx";
 import CompareProduct from "./pages/CompareProduct.jsx";
 import Wishlist from "./pages/Wishlist.jsx";
 import Login from "./pages/Login.jsx";
+import Signup from "./pages/Signup.jsx";
+import Forgotpassword from "./pages/Forgotpassword.jsx";
+import Resetpassword from "./pages/Resetpassword.jsx";
+import SingleBlog from "./pages/SingleBlog.jsx";
 
 const router = createBrowserRouter([
   {
@@ -38,6 +42,10 @@ const router = createBrowserRouter([
         element: <Blog />,
       },
       {
+        path: "/blog/:id",
+        element: <SingleBlog />,
+      },
+      {
         path: "/compare-product",
         element: <CompareProduct />,
       },
@@ -48,6 +56,18 @@ const router = createBrowserRouter([
       {
         path: "/login",
         element: <Login />,
+      },
+      {
+        path: "/signup",
+        element: <Signup />,
+      },
+      {
+        path: "/forgot-password",
+        element: <Forgotpassword />,
+      },
+      {
+        path: "/reset-password",
+        element: <Resetpassword />,
       },
     ],
   },

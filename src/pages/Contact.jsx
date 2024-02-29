@@ -12,12 +12,12 @@ function Contact() {
           <div className="row">
             <div className="col-12">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d26834.53133034207!2d36.882635329632535!3d-1.1766918901028935!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2ske!4v1706605963794!5m2!1sen!2ske"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.8196588565274!2d36.819021075723406!3d-1.2819741856229758!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f10d45af411ad%3A0x6123ae4b4551b201!2sBazaar%20Plaza%2C%20Moi%20Ave%2C%20Nairobi!5e0!3m2!1sen!2ske!4v1709194651173!5m2!1sen!2ske"
                 height="450"
                 className="border-0 w-100"
-                allowFullScreen=""
+                allowfullscreen=""
                 loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
+                referrerpolicy="no-referrer-when-downgrade"
               ></iframe>
             </div>
             <div className="col-12 mt-5">

@@ -15,7 +15,7 @@ function BlogCard() {
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic id
           repellendus
         </p>
-        <Link className="button" to="">
+        <Link className="button" to="/blog/:id">
           Read More
         </Link>
       </div>
