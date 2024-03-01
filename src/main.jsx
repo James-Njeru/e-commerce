@@ -14,6 +14,11 @@ import Signup from "./pages/Signup.jsx";
 import Forgotpassword from "./pages/Forgotpassword.jsx";
 import Resetpassword from "./pages/Resetpassword.jsx";
 import SingleBlog from "./pages/SingleBlog.jsx";
+import RefundPolicy from "./pages/RefundPolicy.jsx";
+import ShippingPolicy from "./pages/ShippingPolicy.jsx";
+import TermandConditions from "./pages/TermandConditions.jsx";
+import PrivacyPolicy from "./pages/PrivPolicy.jsx";
+import SingleProduct from "./pages/SingleProduct.jsx";
 
 const router = createBrowserRouter([
   {
@@ -34,8 +39,12 @@ const router = createBrowserRouter([
         element: <Contact />,
       },
       {
-        path: "/store",
+        path: "/product",
         element: <OurStore />,
+      },
+      {
+        path: "/product/:id",
+        element: <SingleProduct />,
       },
       {
         path: "/blog",
@@ -68,6 +77,22 @@ const router = createBrowserRouter([
       {
         path: "/reset-password",
         element: <Resetpassword />,
+      },
+      {
+        path: "/privacy-policy",
+        element: <PrivacyPolicy />,
+      },
+      {
+        path: "/refund-policy",
+        element: <RefundPolicy />,
+      },
+      {
+        path: "/shipping-policy",
+        element: <ShippingPolicy />,
+      },
+      {
+        path: "/term-conditions",
+        element: <TermandConditions />,
       },
     ],
   },
