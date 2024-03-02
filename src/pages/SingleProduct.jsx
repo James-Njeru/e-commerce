@@ -3,11 +3,23 @@ import BreadCrumb from "../components/BreadCrumb";
 import ProductCard from "../components/ProductCard";
 import ReactStars from "react-rating-stars-component";
 import ReactImageZoom from "react-image-zoom";
+import { TbGitCompare } from "react-icons/tb";
+import { AiOutlineHeart } from "react-icons/ai";
+import Color from "../components/Color";
 import { Watch } from "../assets/images";
 
 function SingleProduct() {
   const [orderedProduct, setOrderedProduct] = useState(false);
   const props = { width: 400, height: 500, zoomWidth: 500, img: Watch };
+
+  const copyToClipboard = (text) => {
+    var textField = document.createElement("textarea");
+    textField.innerText = text;
+    document.body.appendChild(textField);
+    textField.select();
+    document.execCommand("coppy");
+    textField.remove();
+  };
 
   return (
     <>
@@ -53,11 +65,107 @@ function SingleProduct() {
                       edit={false}
                       activeColor="#ffd700"
                     />
-                    <p className="mb-0">(2 Reviews)</p>
+                    <p className="mb-0 t-review">(2 Reviews)</p>
                   </div>
-                  <a href="#review">Write a Review</a>
+                  <a href="#review" className="review-btn">
+                    Write a Review
+                  </a>
                 </div>
-                <div className="border-bottom"></div>
+                <div className="border-bottom py-3">
+                  <div className="d-flex gap-10 align-items-center my-2">
+                    <h3 className="product-heading">Type :</h3>
+                    <p className="product-data">Watch</p>
+                  </div>
+                  <div className="d-flex gap-10 align-items-center my-2">
+                    <h3 className="product-heading">Brand :</h3>
+                    <p className="product-data">Havells</p>
+                  </div>
+                  <div className="d-flex gap-10 align-items-center my-2">
+                    <h3 className="product-heading">Category :</h3>
+                    <p className="product-data">Watch</p>
+                  </div>
+                  <div className="d-flex gap-10 align-items-center my-2">
+                    <h3 className="product-heading">Tags :</h3>
+                    <p className="product-data">Watch</p>
+                  </div>
+                  <div className="d-flex gap-10 align-items-center my-2">
+                    <h3 className="product-heading">Availability :</h3>
+                    <p className="product-data">In Stock</p>
+                  </div>
+                  <div className="d-flex flex-column gap-10 mt-2 mb-3">
+                    <h3 className="product-heading">Size :</h3>
+                    <div className="d-flex flex-wrap gap-15">
+                      <span className="badge border border-1 border-secondary bg-white text-dark">
+                        S
+                      </span>
+                      <span className="badge border border-1 border-secondary bg-white text-dark">
+                        M
+                      </span>
+                      <span className="badge border border-1 border-secondary bg-white text-dark">
+                        XL
+                      </span>
+                      <span className="badge border border-1 border-secondary bg-white text-dark">
+                        XXL
+                      </span>
+                    </div>
+                  </div>
+                  <div className="d-flex flex-column gap-10 mt-2 mb-3">
+                    <h3 className="product-heading">Color :</h3>
+                    <Color />
+                  </div>
+                  <div className="d-flex align-items-center gap-10 mt-2 mb-3">
+                    <h3 className="product-heading">Quantity :</h3>
+                    <div>
+                      <input
+                        type="number"
+                        name=""
+                        id=""
+                        min={1}
+                        max={10}
+                        className="form-control"
+                        style={{ width: "70px" }}
+                      />
+                    </div>
+                    <div className="d-flex align-items-center gap-15 ms-5">
+                      <button className="button border-0" type="submit">
+                        Add To Cart
+                      </button>
+                      <button to={"/signup"} className="button signup">
+                        Buy It Now
+                      </button>
+                    </div>
+                  </div>
+                  <div className="d-flex align-items-center gap-10">
+                    <div>
+                      <a href="">
+                        <TbGitCompare className="fs-5" /> Add to Compare
+                      </a>
+                    </div>
+                    <div>
+                      <a href="">
+                        <AiOutlineHeart className="fs-5" /> Add to Wishlist
+                      </a>
+                    </div>
+                  </div>
+                  <div className="d-flex gap-10 align-items-center my-2">
+                    <h3 className="product-heading">Shipping & Returns :</h3>
+                    <p className="product-data">
+                      Free shipping and returns available on all orders! We ship
+                      all Kenya domestic orders <b>within 0-5 business days!</b>
+                    </p>
+                  </div>
+                  <div className="d-flex gap-10 align-items-center my-2">
+                    <h3 className="product-heading">Copy Product Link</h3>
+                    <a
+                      href="javascript:void(0);"
+                      onClick={() => {
+                        copyToClipboard("text copied to clipboard");
+                      }}
+                    >
+                      Product Link
+                    </a>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

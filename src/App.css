@@ -628,12 +628,13 @@ p {
   color: var(--color-1c1c1b);
 }
 
-.auth-card .signup {
+.signup {
   background-color: var(--color-febd69);
   color: var(--color-131921);
+  border: none;
 }
 
-.auth-card .signup:hover {
+.signup:hover {
   background-color: var(--color-131921);
   color: white;
 }
@@ -724,10 +725,11 @@ p {
 }
 
 .main-product-image .js-image-zoom__zoomed-image {
-  left: 230px;
+  left: 100px;
   padding: 10px;
   background-color: white;
   border-radius: 10px;
+  z-index: 1000;
 }
 
 .main-product-details {
@@ -752,4 +754,26 @@ p {
   line-height: 20px;
   font-weight: 600;
   margin-bottom: 10px;
+}
+
+.main-product-details a.review-btn,
+.t-review {
+  color: var(--color-777777);
+  font-size: 13px;
+}
+
+.product-heading {
+  font-size: 14px;
+  color: var(--color-1c1c1b);
+  margin-bottom: 0px;
+}
+
+.product-data {
+  font-size: 13px;
+  color: var(--color-777777);
+}
+
+.main-product-details a {
+  font-size: 14px;
+  color: var(--color-777777);
 }
